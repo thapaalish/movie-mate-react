@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <form onsubmit="formSubmission(); return false" id="contactForm">
+      <label>Full Name</label>
+      <input name="name" placeholder="Alish thapa" />
+      <br />
+
+      <label>Email</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Alish@gmail.com"
+        name="em"
+      />
+      <br />
+
+      <label>Select your Country</label>
+      <select name="country">
+        <option value="">Select your Country</option>
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+      </select>
+      <br />
+      <textarea rows="10" cols="100" name="msg"></textarea>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <div id="systemMsgs"></div>
+    <div class="systemMsg"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
